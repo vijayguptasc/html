@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <title>HTML PRACTICE</title>
+    <!-- title is name tab.(Name shown above website url) -->
+</head>
+<body>
+    
+<!-- 1] heading tag    -->
+    <h2>This is h2 part.</h2>
+    <h3>This is h1 part.</h3>
+    <h4>This is h4 part : co<sub>2</sub>ax<sup>2</sup>.</h4>  <!--sub,supertag used for subscript & superscipt.-->
+    <p>This is paragraph part &#10148;.</p> <!--&#10148; is html code for symbol ➤ -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, beatae?</p> <!--when type lorem30 then enter.-->
+    
+<!-- 2]tag format for indexing(inside body tag). -->
+    <!-- note that this is header tag which is heading of body. This tags are neccessary for indexing of content by search engine. -->
+    <header>Inside this navigation bar of webpage is their.
+        <nav>----navigation tag.</nav>  
+    </header>
+    <main>this is main tag where main content of website resides. </main>
+        <section>----section tag.</section>
+        <article>----article tag.</article>
+        <aside>----aside tag.</aside>
+    <footer>hi this is footer.</footer>
+    <!-- div tag is block container & span tag is inline container. -->
+    <span>span tag 1</span>
+    <span>span tag 2</span>
+    <div>div container 1</div>
+    <div>div container 2</div>
+
+<!-- 3] -->
+    <!-- hr=horizontal ruler tag is used to create horizontal line-->
+    <hr>
+    <!--html ignores the extra spacing .it doesn't print extra spaces.it prints only single space. to add new line br(break ruling) tag is used. -->
+    <b>This is        Bold</b>
+
+    <i>This is italic tag.</i> 
+    <br>
+    <u>This is Underline.</u>
+     
+    <!-- pre tag is used to print the content as it(extra spaces can be printed) and is block tag. -->
+    <pre>
+    THIS 
+        TEXT 
+            prints
+            
+            AS      IT.
+    </pre>
+    <hr>
+<!-- 4]List    -->
+        <!-- creatng list values-outdatted in html-don't use this for bullets,use css for this  -->
+    <ul type="square">   <!--type = disc,circle,square & default type is circle.-->
+        <li>Home</li>
+        <li>Services </li>
+        <li>Stats</li>
+    </ul>
+
+<!-- 5]Table in html  -->
+    <table>
+        <thead>       <!--thead is used for column name & it is printed in bold.-->
+            <th>Name</th>
+            <th>HighestRun </th>
+            <th colspan="2"> RankScore</th>   <!--Rankscore for 2 columns-->
+        </thead>
+        <tbody>
+            <tr>    <!--First row.-->
+                <td>Virat</td> 
+                <td>239</td> 
+                <td>1</td> 
+                <td>5013</td> 
+            </tr>
+            <tr>
+                <td>Pandaya</td>
+                <td>165</td>
+                <td>9</td>
+                <td>3437</td>
+            </tr>
+            <tr>
+                <td>jadega</td>
+                <td>131</td>
+                <td>2824</td> <!-- 4th row value not specified so nothing printed -->
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+<!-- 6] passing link   -->
+     <hr>
+     <!-- absolute path starts with / and relative path doesn't.
+    & link is not absolute/relative. -->
+
+     <!--this is anchor tag with link. --> 
+     <a href="https://www.flaticon.com/packs/search?word=lock" target="_blank"> <i>Icons</i> </a><br>
+
+     <!-- this is anchor tag with relative path-path wrt current file. -->
+     <a href="../video/video.html" target="_blank"> Video </a><br>
+     <!-- ../ means go to parent of current file -->
+    <!--when you copy this whole code and run it will not go to video page bcz in browser can't find relative paths,it can find only absolute paths. -->
+
+     <!-- For absolute paths, you need to specify the complete path from the root of the file system (e.g., C drive on Windows) to the file or resource you want to link to.  -->
+     <a href="C:/Vijay/Web%20Development/Frontend/HTML%20Notes/html%20code/forms.html" target="_blank"> InputExample-  </a>
+     <!-- note-absolute path is not working here-->
+     <br> <!-- to open link in new tab pass target as target='_blank' not main to open link in new tab. -->
+     <a href="./forms.html">new input</a>
+
+<!-- 7]image    -->
+
+    <img src="https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.1024.jpg" alt="image not loaded sorry" width="200px"></img>
+    <!-- image isn't shown if its find invalid link then it prints alt but you can't provide link in alt. -->
+
+    <!-- adding link at image -->
+    <a href="https://www.toptal.com/designers/htmlarrows/arrows"target="_main"><img src="../image/darkimage.jpg" alt="image not loaded."height="200">img</a>
+    <!-- you can pass content also & link will open by clicking on image ,content both -->
+    
+    <!-- --Aspect Ratio :- The ratio of height & width of image. If we change h & w of image it will not look as you have.in zoom in/out h & w of image are increased in such way that ratio remain as it.if we provide h & w manually image will not look as we want.when we specifies w,its h  is also changed to maintain ratio -->
+
+
+
+</body> 
+</html>

@@ -1,0 +1,14 @@
+Create a html form that demonstrates following input types - with attributes specified
+1)text maxlenght autofocus required
+2)textarea
+3)email
+4)password
+5)color
+6)file
+7)number min max value
+9)range min max value
+10)checkbox disabled checked
+11)radio
+12)button, input:button, submit, reset
+13)option, optgroup
+14)calendar

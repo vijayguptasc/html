@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taking Input in HTML</title>
+</head> 
+<body>
+    
+<form><fieldset>   <!--1]don't forget to use form tag if you don't provide page will not function properly.The fieldset tag is used to group related items within a form(create box).-->
+<!--don't use this tags directly,use input type.you can use textarea tag only without input tag.-->
+    <radio>BMS</radio><button>BMS</button><text>BMS</text><hr>  
+    <Legend>HTML practice</Legend>  <!--use anywhere inside fieldset.-->
+
+<!-- 2]Shortcurt -->
+    <!-- x.y#z dot(.) is used to create x type(input) with class att value equals to y. & with id z. eg. div.abcclass#id2
+    input:b ==>means button.  -->
+
+<!-- 3]Login Page tags :-  -->
+    Username :- <input type="text" value="ajay" maxlength="5"><br> <!--value is default printed.maxlength att is used to specify max length of string.-->
+    Address :- <textarea placeholder="Enter state,City,Station" autofocus></textarea> <!--Autofocus-As form loads the cursor blinks on that input -->
+    ><!-- you can take output without name,value attribute also bcz these attributes are for backend purpose. --> 
+    <input type="file" value="timepass"> <!-- here value att has no effect. -->
+    Email<input type="email"required> <!--mandatory to provide email else it will not accept data.-->
+        <input type="color" id="colorid">
+        <label for="colorid">Color</label>  <!-- this is how to use label tag. -->
+    Password<input type="password">
+    Age<input type="number" value="20"name="age" min="15"max="30"> <!--beyond this limit if we enter age data will not submit.-->
+    Telephone <input type="tel" name="" id="">
+    University<input type="text"value="MU" readonly><!--diff b/w readonly & disabled is disabled data is not sended whereas readonly data is sended.-->
+    Range <input type="range" min="1" max="100"> <!--default value is 50% of limit.you can change default value by specifying value.-->
+    R2 <input type="range" min="1" max="100" value="10">
+    
+<!-- 4]Checkbox Tag :- -->
+    Choose Your Favourite Subject :<br>
+    <input type="checkbox" checked>Graphics  <!--diff checkboxex have diff name,id.-->
+    <input type="checkbox" disabled>Mechanics
+    <input type="checkbox">Geology
+    <input type="checkbox">Pscychology
+    <br>
+
+<!-- 5]Radio tag :-  -->
+<!-- to implement radio make same name for all options -->
+    Choose Your Degree :-<input type="radio" name="r">BE 
+    <!--when using label tag when you click on label then also works & it is good practice to provide all att(bcz this att are required for backend purpose.)-->
+    <label>BMS<input type="radio" name="r"> </label> 
+    <!-- to choose any one of circle,provide same name to all & note that this 4 must be of same type. -->       
+    <label><input type="radio" name="r">BCA</label>
+    <!-- alternate method to use label tag - for att value is id value of element through which label is bound. -->
+    <input type="radio" name="r">
+    <label for="idabc">BBA<label>   <!-- input text inside label -->
+    <br>
+
+<!-- 6]Select tag :  -->
+    Choose Your Country :-
+    <select>content  <!-- Choose Your Country :-this content inside select tag doesn't prints.  -->
+        <option value="USA">America</option>  <!--content must be passed to show something at frontend,Value attribute is data that is stored at backend when user selects this option.-->
+        <optgroup label="Asia"> <!--don,t pass asia outside optgroup if passed it will consider value of optgroup as blank & prints blank line & prints Asia that is written outside optgrp.-->
+            <option value="India">Ind</option>
+            <option value="Russia">Rus</option>
+        </optgroup>
+        <option value="Europe">EU</option>
+    </select><br>
+
+<!-- 7]Button tag -->
+<!-- The difference is that <input> buttons can only have text, whereas <button> can contain text, images, and other elements -->
+    <a href="https://CodeWithHarry.com" target="_blanc"><input type="button" value="ClickHere"></a>     
+    <a href="https://CodeWithHarry.com"target="_blank"><button>direct</button></a> <!--if you use button tag directly you will get glitch-link will not open.so don't use button tag directly.-->
+    <br>   
+    <a href="https://CodeWithHarry.com" ></a><button>Homepage</button> <!--not works-so alws place input tag inside link/label tag.-->
+    <br>
+    disabled button :-<input type="button" disabled value="History"> <!--disables button.-->
+    <br>
+   
+<!-- 8]Calendar -->
+    <input type="date" name="d">
+    <input type="datetime-local" name="dt">
+    <input type="month" name="m">
+    <input type="time" name="t" id="tid">
+    <input type="week" name="w" id="wid">
+    
+    <input type="submit" value="submit here"> <!--it submit the data & data is reflected on url.If you don't provide value default submit value will be shown on user screen.-->
+    <input type="reset" value="to reset data"/><!--it resets the page. provide / at last.-->
+   <!-- enclose login inputs insode form tag -->
+</fieldset></form>  
+</body>
+</html>
